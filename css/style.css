@@ -1,0 +1,155 @@
+
+/*skip to main*/
+.skip a{
+    position: absolute;
+    top: -65px;
+    color: #00274C;
+    background-color: #FFCB05;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skip a:focus{
+     top: 25px;
+}
+
+
+header{
+    background: lightblue;
+    display: block;
+    padding: 10px 0 10px;
+}
+
+
+.header-banner{
+    padding: 10% 0 0 10%;
+}
+
+
+/*tab content*/
+
+#main-content{
+        margin: 0 10% 5%;
+    }
+    .section-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;;
+        margin-top: 20px;
+        column-gap: 5%;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 21%;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .header-banner h1{
+       font-size: 500%;
+       color: white;
+       margin: 0;
+    }
+    .header-banner h2{
+        font-size: 200%;
+        color: white;
+        margin: 0 0 3% 0;
+    }
+    p.item-name{
+        font-weight: bold;
+        padding: 0%;
+        margin: 4% 0 0 0;
+    }
+    p.style-name{
+        font-style: italic;
+        margin: 0;
+    }
+    .content-container img{
+        width: 100%;
+        border-radius: 20px;
+        transition: transform 0.2s;
+    }
+    .content-container img:hover{
+        transform: scale(1.05);
+    }
+
+    .filter-tab{
+        display: flex;
+        flex-direction: row;
+        column-gap: 7%;
+        padding: 2% 4% 0 4%;
+        border-bottom: solid grey 1px;
+    }
+    .filter-tab p{
+        position: relative;
+        font-size: 130%;
+    }
+    .filter-tab p.active{
+        border-bottom: 2px solid #5F64E7;
+        color: #5F64E7;
+    }
+    .filter-tab p:hover{
+        cursor: pointer;
+    }
+
+
+
+
+
+/* Dark mode created with help from
+https://dev.to/nilebits/10-amazing-things-you-can-do-with-simple-javascript-2d96 */
+
+body {
+    transition: background-color 0.5s, color 0.3s;
+    }
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
