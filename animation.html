@@ -38,14 +38,14 @@
                 <li><a href = "index.html">About</a></li>
                 <li><a href = "sketchbook.html">Sketchbook</a></li>
                 <li><a href = "furniture.html">Furniture</a></li>
-                <li><a href = "animation.html">Animation</a></li>
+                <li><a href = "animation.html"class="active">Animation</a></li>
             </ul>
         </nav>
 
         <!--header-banner-->
         <div class="header-banner">
             <h1>Animation</h1>
-            <h2>The Making of Elm</h2>
+            <h2>2D animated pieces</h2>
         </div>
 
     </header>
@@ -53,26 +53,55 @@
 
 
 <!-- Content -->
+    <main id="main-content">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Elm')">Elm</button>
+            <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
+        </div>
 
-    <div class="video">
-      <iframe width="560" height="315" src="images/elm/elm.mp4"
-      title="Story of Elm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+        <div id="Elm" class="tabcontent">
+            <p class ="item-info"> What started as a quck character design snowballed into a </p>
 
-    <div class="video">
-      <iframe width="560" height="315" src="images/elm/Animatic---Scene-1.mp4"
-      title="Scene 1 Animatic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+            <div class="video">
+                <video width="560" height="315" controls>
+                <source src="images/elm/Animatic---Scene-1.mp4" type="video/mp4">
+                </video>
+                <p class ="item-name">Scene 1 Animatic</p>
+                <p class ="style-name">2D Animation | Procreate | 0:41</p>
+            </div>
 
-    <div class="video">
-      <iframe width="560" height="315" src="images/elm/Uproot.mp4"
-      title="Rought Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+            <p class ="item-info"> What started as a quck character design snowballed into a </p>
+
+            <div class="video">
+                <video width="560" height="315" controls>
+                <source src="images/elm/Uproot.mp4" type="video/mp4">
+                </video>
+                <p class ="item-name">Rough Animation</p>
+                <p class ="style-name">2D Animation | Procreate | 0:12</p>
+            </div>
+
+            <p class ="item-info"> What started as a quck character design snowballed into a </p>
+
+            <div class="video">
+                <video width="560" height="315" controls>
+                <source src="images/elm/elm.mp4" type="video/mp4">
+                </video>
+                <p class ="item-name">The Story of Elm</p>
+                <p class ="style-name">2D Animation | Procreate, Photoshop, Clip Studio Paint | 4:10</p>
+            </div>
+
+        </div>
 
 
+        <div id="Other" class="tabcontent">
+
+        </div>
+    </main>
+
+
+
+
+    <script src="js/tabs.js"></script>
 </body>
 
 
