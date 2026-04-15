@@ -45,7 +45,7 @@
         <!--header-banner-->
         <div class="header-banner">
             <h1>My Sketchbook</h1>
-            <h2>Practice and Explorations</h2>
+            <h2>For Class or Personal Projects—Work I’ve Truly Enjoyed</h2>
         </div>
 
     </header>
@@ -192,6 +192,50 @@
             </div>
         </div>
     </main>
+
+
+
+
+
+<!-- Footer -->
+    <footer>
+        <!--.social content modified from ChatGPT with the prompt: "Based on my current code,
+         how would I make the social media links into icons  -->
+
+        <!-- I also used chat to help fix some accessibility issues such as
+         creating alt text for the links. -->
+
+    <div class="social">
+        <a href="https://www.instagram.com/nkenn_gallery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's Gallery Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/noo_alalala/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's Gallery Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nuala-kennedy-53ab6a214/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's LinkedIn">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p><span id="year"></span></p>
+        <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+
+
 
 
     <script src="js/tabs.js"></script>
